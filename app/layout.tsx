@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Geist, Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,8 +17,14 @@ const newsreader = Newsreader({
   display: "swap",
 });
 
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://spencer-applebaum.vercel.app"),
+  metadataBase: new URL("https://spencerapplebaum.com"),
   title: "Spencer Applebaum — General Partner, Co-Head of Venture, Multicoin Capital",
   description:
     "Spencer Applebaum is General Partner and Co-Head of Venture at Multicoin Capital. He specializes in DeFi protocols, DePIN infrastructure, and crypto-consumer applications.",
@@ -36,8 +42,7 @@ export const metadata: Metadata = {
   },
 };
 
-const themeInit = `(function(){const t = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-document.documentElement.dataset.theme = t;})();`;
+const themeInit = `(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='light';}})();`;
 
 export default function RootLayout({
   children,
@@ -49,7 +54,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
-      <body className={`${inter.variable} ${newsreader.variable} antialiased`}>
+      <body className={`${inter.variable} ${newsreader.variable} ${geist.variable} antialiased`}>
         {children}
       </body>
     </html>

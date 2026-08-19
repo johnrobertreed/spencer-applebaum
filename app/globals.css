@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme inline {
+  --color-stone: #f3f0ea;
+  --color-ink: #141310;
+  --color-mute: #5c574e;
+  --color-navy: #1b2a4a;
+  --color-gold: #a38b56;
+  --color-rule: #d6d0c4;
+  --font-serif: var(--font-newsreader), Georgia, "Times New Roman", Times, serif;
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+}
+
 :root {
   --bg: #ffffff;
   --text: #1a1a1a;
@@ -7,8 +18,6 @@
   --link: #1a1a1a;
   --link-hover: #000000;
   --border: #e0e0e0;
-  --tag-bg: #f0f0f0;
-  --tag-text: #444444;
 }
 
 [data-theme="dark"] {
@@ -18,48 +27,60 @@
   --link: #e0e0e0;
   --link-hover: #ffffff;
   --border: #2a2a2a;
-  --tag-bg: #1f1f1f;
-  --tag-text: #aaaaaa;
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--bg);
 }
 
 body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.classic-shell {
+  min-height: 100dvh;
+  background: #f3f0ea;
+  color: #141310;
+  font-family: var(--font-geist), system-ui, sans-serif;
+}
+
+.classic-shell a {
+  text-underline-offset: 0.18em;
+}
+
+.new-shell {
+  min-height: 100dvh;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-inter), Inter, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 2rem 1.25rem 4rem;
-  -webkit-font-smoothing: antialiased;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.new-shell-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.new-shell h1,
+.new-shell h2,
+.new-shell h3,
+.new-shell h4 {
   font-family: var(--font-newsreader), Newsreader, Georgia, serif;
   font-weight: 500;
   line-height: 1.3;
 }
 
-h1 {
-  font-size: 2rem;
-}
-
-a {
+.new-shell a {
   color: var(--link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
-a:hover {
+.new-shell a:hover {
   color: var(--link-hover);
 }
