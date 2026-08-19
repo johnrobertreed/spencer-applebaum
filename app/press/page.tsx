@@ -102,8 +102,8 @@ export default function Press() {
       <section>
         <p className="mb-4">
           Spencer Applebaum is General Partner and Co-Head of Venture at
-          Multicoin Capital. One of the firm’s first hires, he joined in early
-          2018. He was named Investment Partner in March 2023 and promoted to
+          Multicoin Capital. He joined in 2018 as one of the firm’s first
+          hires. He was named Investment Partner in March 2023 and promoted to
           General Partner and Co-Head of Venture in March 2026.
         </p>
         <p className="mb-4">

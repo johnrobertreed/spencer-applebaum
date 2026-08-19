@@ -139,8 +139,8 @@ export default function Home() {
     <SiteChrome>
       <section>
         <p className="mb-4">
-          I’m General Partner and Co-Head of Venture at Multicoin Capital. One
-          of the firm’s first hires, I joined in early 2018. I was named
+          I’m General Partner and Co-Head of Venture at Multicoin Capital. I
+          joined in 2018 as one of the firm’s first hires. I was named
           Investment Partner in March 2023 and promoted to General Partner and
           Co-Head of Venture in March 2026.
         </p>
