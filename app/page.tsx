@@ -140,7 +140,7 @@ export default function Home() {
       <section>
         <p className="mb-4">
           I’m General Partner and Co-Head of Venture at Multicoin Capital. I
-          joined in 2018 as one of the firm’s first hires and have helped grow
+          joined in 2018 as one of the firm’s first hires and helped grow
           our AUM into the billions.
         </p>
         <p className="mb-4">
