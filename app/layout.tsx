@@ -15,6 +15,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://spencer-applebaum.vercel.app"),
   title: "Spencer Applebaum — General Partner, Co-Head of Venture, Multicoin Capital",
   description:
     "Spencer Applebaum is General Partner and Co-Head of Venture at Multicoin Capital. He specializes in DeFi protocols, DePIN infrastructure, and crypto-consumer applications.",
