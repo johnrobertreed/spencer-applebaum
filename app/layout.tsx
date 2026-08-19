@@ -55,7 +55,9 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
       <body className={`${inter.variable} ${newsreader.variable} ${geist.variable} antialiased`}>
-        {children}
+        <div className="new-shell">
+          <div className="new-shell-inner">{children}</div>
+        </div>
       </body>
     </html>
   );

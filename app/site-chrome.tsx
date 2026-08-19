@@ -9,7 +9,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         style={{ borderColor: "var(--border)" }}
       >
         <Link
-          href="/new"
+          href="/"
           className="text-[1.1rem] font-medium leading-none no-underline"
           style={{ fontFamily: "var(--font-newsreader), Newsreader, serif", color: "var(--text)" }}
         >
@@ -19,13 +19,13 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
           className="flex flex-wrap items-center justify-end gap-5 text-[0.9rem]"
           style={{ color: "var(--text-secondary)" }}
         >
-          <Link href="/new#writing" className="no-underline hover:text-[var(--text)]">
+          <Link href="/#writing" className="no-underline hover:text-[var(--text)]">
             Writing
           </Link>
-          <Link href="/new/press" className="no-underline hover:text-[var(--text)]">
+          <Link href="/press" className="no-underline hover:text-[var(--text)]">
             Press
           </Link>
-          <Link href="/new#contact" className="no-underline hover:text-[var(--text)]">
+          <Link href="/#contact" className="no-underline hover:text-[var(--text)]">
             Contact
           </Link>
           <a
