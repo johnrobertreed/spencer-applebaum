@@ -140,9 +140,8 @@ export default function Home() {
       <section>
         <p className="mb-4">
           I’m General Partner and Co-Head of Venture at Multicoin Capital. I
-          joined in 2018 as one of the firm’s first hires. I was named
-          Investment Partner in March 2023 and promoted to General Partner and
-          Co-Head of Venture in March 2026.
+          joined in 2018 as one of the firm’s first hires and have helped grow
+          our AUM into the billions.
         </p>
         <p className="mb-4">
           I work across public and private markets. In public markets I drive
