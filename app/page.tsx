@@ -2,19 +2,9 @@ import Image from "next/image";
 
 const investments = [
   {
-    name: "BAXUS",
-    href: "https://multicoin.capital/2024/05/03/unbundling-sothebys/",
-    text: "On May 3, 2024, Multicoin led a $5 million seed. Applebaum announced the round.",
-  },
-  {
-    name: "Drift",
-    href: "https://multicoin.capital/2024/09/10/drift-analysis-and-valuation/",
-    text: "Multicoin invested in the seed round in July 2021. On September 10, 2024, Applebaum and Tushar Jain published a public analysis of DRIFT, with a then base-case valuation of $3.58.",
-  },
-  {
-    name: "LI.FI",
-    href: "https://www.prnewswire.com/news-releases/lifi-secures-29m-in-series-a-extension-led-by-multicoin-and-coinfund-to-scale-the-universal-liquidity-market-for-digital-assets-302639425.html",
-    text: "On December 11, 2025, Multicoin and CoinFund led a $29 million Series A extension.",
+    name: "Hyperliquid",
+    href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
+    text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum was the primary champion of the investment. With Shayon Sengupta and Tushar Jain, he published a public analysis on June 25, 2026.",
   },
   {
     name: "fun.xyz",
@@ -22,9 +12,19 @@ const investments = [
     text: "On May 1, 2026, Multicoin co-led a $72 million Series A. As Applebaum noted at the time, Multicoin has led two rounds in fun.xyz.",
   },
   {
-    name: "Hyperliquid",
-    href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
-    text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum, Shayon Sengupta, and Tushar Jain published a public analysis on June 25, 2026.",
+    name: "LI.FI",
+    href: "https://www.prnewswire.com/news-releases/lifi-secures-29m-in-series-a-extension-led-by-multicoin-and-coinfund-to-scale-the-universal-liquidity-market-for-digital-assets-302639425.html",
+    text: "On December 11, 2025, Multicoin and CoinFund led a $29 million Series A extension.",
+  },
+  {
+    name: "BAXUS",
+    href: "https://multicoin.capital/2024/05/03/unbundling-sothebys/",
+    text: "On May 3, 2024, Multicoin led a $5 million seed. Applebaum announced the round.",
+  },
+  {
+    name: "Jito",
+    href: "https://multicoin.capital/2025/03/04/jito-asset-report/",
+    text: "Multicoin has a significant position in JTO across its hedge and venture funds. Applebaum was instrumental in the investment.",
   },
 ];
 
@@ -212,7 +212,7 @@ export default function Home() {
           </ul>
           <p className="mt-8 text-[14.5px] leading-relaxed text-mute">
             He and Shayon Sengupta were instrumental in several of the firm’s
-            investments, including Dune, Fuse, Geodnet, Helium, Jito, Kamino,
+            investments, including Dune, Fuse, Geodnet, Helium, Kamino,
             Render, Sei, and Solana.
           </p>
         </section>
