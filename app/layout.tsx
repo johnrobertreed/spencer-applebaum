@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Fraunces, Source_Sans_3 } from "next/font/google";
+import { Geist, Newsreader } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-newsreader",
   display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
+const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-source",
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${sourceSans.variable} antialiased`}>
+      <body className={`${newsreader.variable} ${geist.variable} antialiased`}>
         {children}
       </body>
     </html>

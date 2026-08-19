@@ -4,7 +4,7 @@ const investments = [
   {
     name: "Hyperliquid",
     href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
-    text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum was the primary champion of the investment. With Shayon Sengupta and Tushar Jain, he published a public analysis on June 25, 2026.",
+    text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum was the primary champion of the investment. He published a public analysis on June 25, 2026.",
   },
   {
     name: "fun.xyz",
@@ -158,7 +158,7 @@ export default function Home() {
             <h1 className="font-serif text-[2.15rem] font-medium leading-[1.15] tracking-tight text-ink sm:text-[2.55rem]">
               Spencer Applebaum
             </h1>
-            <p className="mt-4 font-serif text-[1.25rem] font-normal italic leading-snug text-ink">
+            <p className="mt-4 font-serif text-[1.25rem] font-normal leading-snug text-ink">
               General Partner &amp; Co-Head of Venture
             </p>
             <p className="mt-1 font-serif text-[1.05rem] font-normal text-mute">
@@ -211,9 +211,9 @@ export default function Home() {
             ))}
           </ul>
           <p className="mt-8 text-[14.5px] leading-relaxed text-mute">
-            He and Shayon Sengupta were instrumental in several of the firm’s
-            investments, including Dune, Fuse, Geodnet, Helium, Jito, Kamino,
-            Render, Sei, and Solana. The firm’s full list of investments is on
+            He was instrumental in several of the firm’s investments, including
+            Dune, Fuse, Geodnet, Helium, Jito, Kamino, Render, Sei, and Solana.
+            The firm’s full list of investments is on
             the{" "}
             <a
               href="https://multicoin.capital/portfolio/"
