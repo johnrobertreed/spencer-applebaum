@@ -4,69 +4,69 @@ const investments = [
   {
     name: "BAXUS",
     href: "https://multicoin.capital/2024/05/03/unbundling-sothebys/",
-    text: "In May 2024, Multicoin led a $5 million seed. Applebaum announced the round.",
+    text: "On May 3, 2024, Multicoin led a $5 million seed. Applebaum announced the round.",
   },
   {
     name: "Drift",
     href: "https://multicoin.capital/2024/09/10/drift-analysis-and-valuation/",
-    text: "Multicoin invested in the seed round in July 2021. In September 2024, Applebaum and Tushar Jain published a public analysis of DRIFT, with a then base-case valuation of $3.58.",
+    text: "Multicoin invested in the seed round in July 2021. On September 10, 2024, Applebaum and Tushar Jain published a public analysis of DRIFT, with a then base-case valuation of $3.58.",
   },
   {
     name: "LI.FI",
     href: "https://www.prnewswire.com/news-releases/lifi-secures-29m-in-series-a-extension-led-by-multicoin-and-coinfund-to-scale-the-universal-liquidity-market-for-digital-assets-302639425.html",
-    text: "In December 2025, Multicoin and CoinFund led a $29 million Series A extension.",
+    text: "On December 11, 2025, Multicoin and CoinFund led a $29 million Series A extension.",
   },
   {
     name: "fun.xyz",
     href: "https://www.gunder.com/en/news-insights/client-news/multicoin-capital-co-leads-funs-dollar72-million-series-a",
-    text: "In May 2026, Multicoin co-led a $72 million Series A. As Applebaum noted at the time, Multicoin has led two rounds in fun.xyz.",
+    text: "On May 1, 2026, Multicoin co-led a $72 million Series A. As Applebaum noted at the time, Multicoin has led two rounds in fun.xyz.",
   },
   {
     name: "Hyperliquid",
     href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
-    text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum, Shayon Sengupta, and Tushar Jain published a public analysis in June 2026.",
+    text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum, Shayon Sengupta, and Tushar Jain published a public analysis on June 25, 2026.",
   },
 ];
 
 const writing = [
   {
     title: "Multicoin Capital’s Investment Thesis",
-    year: "2026",
+    date: "February 6, 2026",
     href: "https://multicoin.capital/2026/02/06/multicoin-capitals-investment-thesis/",
   },
   {
     title: "Hyperliquid (HYPE) Analysis & Valuation",
-    year: "2026",
+    date: "June 25, 2026",
     href: "https://multicoin.capital/2026/06/25/hyperliquid-hype-analysis-and-valuation/",
   },
   {
     title: "ACE Is The Place With The Helpful Value Capture",
-    year: "2026",
+    date: "February 10, 2026",
     href: "https://multicoin.capital/2026/02/10/ace-is-the-place-with-the-helpful-value-capture/",
   },
   {
     title: "Adverse Selection Rules Everything Around Me",
-    year: "2026",
+    date: "February 17, 2026",
     href: "https://multicoin.capital/2026/02/17/adverse-selection-rules-everything-around-me/",
   },
   {
     title: "Specialized Stablecoin Fintechs",
-    year: "2025",
+    date: "December 10, 2025",
     href: "https://multicoin.capital/2025/12/10/specialized-stablecoin-fintechs/",
   },
   {
     title: "Drift ($DRIFT) Analysis and Valuation",
-    year: "2024",
+    date: "September 10, 2024",
     href: "https://multicoin.capital/2024/09/10/drift-analysis-and-valuation/",
   },
   {
     title: "Unbundling Sotheby’s",
-    year: "2024",
+    date: "May 3, 2024",
     href: "https://multicoin.capital/2024/05/03/unbundling-sothebys/",
   },
   {
     title: "The DeFi Stack",
-    year: "2020",
+    date: "November 24, 2020",
     href: "https://multicoin.capital/2020/11/24/the-defi-stack/",
   },
 ];
@@ -74,37 +74,37 @@ const writing = [
 const speaking = [
   {
     title: "Value Capture and Defensibility in DeFi",
-    detail: "Multicoin Summit, 2023",
+    detail: "Multicoin Summit, October 10, 2023",
     href: "https://multicoin.capital/2023/10/06/discussions-from-the-2023-multicoin-summit/",
   },
   {
     title: "Improving Capital Efficiency in DeFi",
-    detail: "Multicoin Summit, 2024",
+    detail: "Multicoin Summit, November 2024",
     href: "https://multicoin.capital/2024/12/13/highlights-from-the-2024-multicoin-summit/",
   },
   {
     title: "The Opportunities for Specialized Stablecoin Fintechs",
-    detail: "Multicoin Summit, 2025",
+    detail: "Multicoin Summit, December 11, 2025",
     href: "https://www.confbase.com/speakers/spencer-applebaum",
   },
   {
     title: "Crypto’s Rebirth Moment",
-    detail: "Lightspeed, March 2026",
+    detail: "Lightspeed, March 10, 2026",
     href: "https://solana.com/es/podcasts/lightspeed/episodes/crypto-s-rebirth-moment-tushar-shayon-and-spencer-2026-03-10",
   },
   {
     title: "Multicoin’s Crypto Mega Thesis 2.0",
-    detail: "DAS New York, March 2026",
+    detail: "DAS New York, March 26, 2026",
     href: "https://www.confbase.com/speakers/spencer-applebaum",
   },
   {
     title: "Bermuda Digital Finance Forum",
-    detail: "Hamilton, May 2026",
+    detail: "Hamilton, May 14, 2026",
     href: "https://www.royalgazette.com/international-business/business/article/20260514/applebaum-digital-assets-reshaping-capital-markets/",
   },
   {
     title: "Digital Assets’ Next Big Move",
-    detail: "SALT Digital Finance Forum, June 2026",
+    detail: "SALT Digital Finance Forum, June 3, 2026",
     href: "https://www.youtube.com/watch?v=78NJ66koFHk",
   },
   {
@@ -114,12 +114,12 @@ const speaking = [
   },
   {
     title: "Out East Summit",
-    detail: "The TIE, July 2026",
+    detail: "The TIE, July 20, 2026",
     href: "https://www.confbase.com/speakers/spencer-applebaum",
   },
   {
     title: "TOKEN2049 Dubai",
-    detail: "April 2027, upcoming",
+    detail: "April 21, 2027, upcoming",
     href: "https://www.confbase.com/speakers/spencer-applebaum",
   },
 ];
@@ -158,10 +158,12 @@ export default function Home() {
             <h1 className="font-serif text-[2.15rem] font-medium leading-[1.15] tracking-tight text-ink sm:text-[2.55rem]">
               Spencer Applebaum
             </h1>
-            <p className="mt-3 text-[13px] font-medium uppercase tracking-[0.14em] text-navy">
-              General Partner, Co-Head of Venture
+            <p className="mt-4 font-serif text-[1.25rem] font-normal italic leading-snug text-ink">
+              General Partner &amp; Co-Head of Venture
             </p>
-            <p className="mt-1.5 text-[15px] text-mute">Multicoin Capital</p>
+            <p className="mt-1 font-serif text-[1.05rem] font-normal text-mute">
+              Multicoin Capital
+            </p>
           </div>
         </header>
 
@@ -170,19 +172,20 @@ export default function Home() {
             Spencer Applebaum is General Partner and Co-Head of Venture at
             Multicoin Capital. One of the firm’s first hires, he joined around
             2018. He was named Investment Partner in March 2023 and promoted to
-            General Partner and Co-Head of Venture on 24 March 2026.
+            General Partner and Co-Head of Venture on March 24, 2026.
           </p>
           <p>
-            He specializes in decentralized finance (DeFi) protocols, DePIN
-            infrastructure, and crypto-consumer applications, and contributes to
-            public-markets thesis formation and asset coverage. He is a named
-            author of the firm’s 2026 investment thesis.
+            He works across public and private markets. In public markets he
+            drives thesis formation, asset coverage, and on-chain diligence. In
+            private markets he underwrites and negotiates, and leads deals
+            across DeFi, DePIN infrastructure, and crypto-consumer applications.
+            He was one of the key architects of the firm’s updated 2026
+            investment thesis.
           </p>
           <p>
-            He studied Accounting and Economics at Miami University, where he
-            co-founded the school’s first blockchain student organization. Before
-            Multicoin, he interned at Bitspark and worked in Deloitte’s
-            multi-state tax division.
+            He studied Accounting and Economics at Miami University. He lives
+            and works in New York City and contributes to various industry
+            groups.
           </p>
         </section>
 
@@ -229,7 +232,7 @@ export default function Home() {
                 >
                   <span className="leading-snug">{item.title}</span>
                   <span className="shrink-0 tabular-nums text-mute">
-                    {item.year}
+                    {item.date}
                   </span>
                 </a>
               </li>
@@ -272,7 +275,7 @@ export default function Home() {
           <div className="mt-7 grid gap-8 sm:grid-cols-3">
             {contacts.map((item) => (
               <a key={item.email} href={`mailto:${item.email}`} className="group">
-                <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-navy">
+                <p className="text-[13px] text-mute">
                   {item.label}
                 </p>
                 <p className="mt-2 text-[14.5px] text-ink group-hover:underline">
