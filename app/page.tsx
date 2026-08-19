@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ThemeToggle } from "./theme-toggle";
 
 const investments = [
   {
@@ -146,210 +147,217 @@ const contacts = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <div className="h-px bg-gold" />
-
-      <div className="mx-auto max-w-[760px] px-6 pb-20 pt-12 sm:px-8 sm:pt-16">
-        <header className="flex flex-col gap-8 sm:flex-row sm:items-end sm:gap-12">
-          <Image
-            src="/spencer.jpg"
-            alt="Spencer Applebaum"
-            width={700}
-            height={700}
-            priority
-            className="h-[200px] w-[200px] shrink-0 border border-rule object-cover object-top"
-          />
-          <div className="pb-0.5">
-            <h1 className="font-serif text-[2.15rem] font-medium leading-[1.15] tracking-tight text-ink sm:text-[2.55rem]">
-              Spencer Applebaum
-            </h1>
-            <p className="mt-4 font-serif text-[1.25rem] font-normal leading-snug text-ink">
-              General Partner &amp; Co-Head of Venture
-            </p>
-            <p className="mt-1 font-serif text-[1.05rem] font-normal text-mute">
-              Multicoin Capital
-            </p>
-          </div>
-        </header>
-
-        <section className="mt-14 space-y-5 border-t border-rule pt-10 text-[16.5px] leading-[1.65] text-ink sm:mt-16">
-          <p>
-            Spencer Applebaum is General Partner and Co-Head of Venture at
-            Multicoin Capital. One of the firm’s first hires, he joined in early
-            2018. He was named Investment Partner in March 2023 and promoted to
-            General Partner and Co-Head of Venture in March 2026.
-          </p>
-          <p>
-            He works across public and private markets. In public markets he
-            drives thesis formation, asset coverage, and on-chain diligence. In
-            private markets he drives underwriting and negotiating for the
-            firm’s funds, and leads deals across DeFi, DePIN infrastructure,
-            and crypto-consumer applications. He was one of the key architects
-            of the firm’s updated 2026 investment thesis.
-          </p>
-          <p>
-            He studied Accounting and Economics at Miami University. He lives
-            and works in New York City, speaks regularly on podcasts and at
-            industry events, and contributes to various industry groups.
-          </p>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
-            Selected investments
-          </h2>
-          <ul className="mt-7 space-y-7">
-            {investments.map((item) => (
-              <li key={item.name}>
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[15px] font-medium text-ink hover:text-navy"
-                >
-                  {item.name}
-                </a>
-                <p className="mt-1.5 text-[15px] leading-relaxed text-mute">
-                  {item.text}
-                </p>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 text-[14.5px] leading-relaxed text-mute">
-            He was instrumental in several of the firm’s investments, including
-            Fuse, Geodnet, Helium, Jito, Kamino, Render, and Sei.
-            The firm’s full list of investments is on
-            the{" "}
-            <a
-              href="https://multicoin.capital/portfolio/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-rule underline-offset-[0.18em] hover:text-navy"
-            >
-              portfolio page
-            </a>
-            .
-          </p>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
+    <div>
+      <header className="mb-12 flex items-center justify-between border-b pb-4" style={{ borderColor: "var(--border)" }}>
+        <span
+          className="text-[1.1rem] font-medium leading-none"
+          style={{ fontFamily: "var(--font-newsreader), Newsreader, serif", color: "var(--text)" }}
+        >
+          Spencer Applebaum
+        </span>
+        <nav className="flex flex-wrap items-center justify-end gap-5 text-[0.9rem]" style={{ color: "var(--text-secondary)" }}>
+          <a href="#writing" className="no-underline hover:text-[var(--text)]">
             Writing
-          </h2>
-          <ul className="mt-5">
-            {writing.map((item) => (
-              <li key={item.href} className="border-b border-rule first:border-t">
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-baseline justify-between gap-6 py-3.5 text-[15px] text-ink hover:text-navy"
-                >
-                  <span className="leading-snug">{item.title}</span>
-                  <span className="shrink-0 tabular-nums text-mute">
-                    {item.date}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
+          </a>
+          <a href="#speaking" className="no-underline hover:text-[var(--text)]">
             Speaking
-          </h2>
-          <ul className="mt-5">
-            {speaking.map((item) => (
-              <li
-                key={item.title}
-                className="border-b border-rule first:border-t"
-              >
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col gap-0.5 py-3.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
-                >
-                  <span className="text-[15px] leading-snug text-ink hover:text-navy">
-                    {item.title}
-                  </span>
-                  <span className="shrink-0 text-[13.5px] text-mute">
-                    {item.detail}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-16 border-t border-rule pt-10">
-          <h2 className="font-serif text-[1.35rem] font-medium tracking-tight text-ink">
+          </a>
+          <a href="#contact" className="no-underline hover:text-[var(--text)]">
             Contact
-          </h2>
-          <div className="mt-7 grid gap-8 sm:grid-cols-3">
-            {contacts.map((item) => (
-              <a key={item.email} href={`mailto:${item.email}`} className="group">
-                <p className="text-[13px] text-mute">
-                  {item.label}
-                </p>
-                <p className="mt-2 text-[14.5px] text-ink group-hover:underline">
-                  {item.email}
-                </p>
-              </a>
-            ))}
-          </div>
-        </section>
+          </a>
+          <a
+            href="https://multicoin.capital/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline hover:text-[var(--text)]"
+          >
+            Multicoin
+          </a>
+          <ThemeToggle />
+        </nav>
+      </header>
 
-        <footer className="mt-20 border-t border-rule pt-8">
-          <div className="flex items-center justify-between text-[13.5px] text-mute">
-            <a
-              href="https://multicoin.capital/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-navy"
-            >
-              Multicoin Capital
-            </a>
-            <div className="flex gap-6">
-              <a
-                href="https://x.com/SpencerApplebau"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-navy"
-              >
-                X
-              </a>
-              <a
-                href="https://www.linkedin.com/in/spencer-applebaum-bb6466108/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-navy"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
-          <div className="mt-4 flex gap-4 text-[12px] text-mute/70">
-            <a
-              href="https://multicoin.capital/terms/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-mute"
-            >
-              Terms
-            </a>
-            <a
-              href="https://multicoin.capital/disclosures/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-mute"
-            >
-              Disclosures
-            </a>
-          </div>
-        </footer>
+      <Image
+        src="/spencer.jpg"
+        alt="Spencer Applebaum"
+        width={700}
+        height={700}
+        priority
+        className="mb-8 h-[148px] w-[148px] rounded-[4px] object-cover object-top"
+      />
+
+      <section>
+        <p className="mb-4">
+          Spencer Applebaum is General Partner and Co-Head of Venture at
+          Multicoin Capital. One of the firm’s first hires, he joined in early
+          2018. He was named Investment Partner in March 2023 and promoted to
+          General Partner and Co-Head of Venture in March 2026.
+        </p>
+        <p className="mb-4">
+          He works across public and private markets. In public markets he
+          drives thesis formation, asset coverage, and on-chain diligence. In
+          private markets he drives underwriting and negotiating for the
+          firm’s funds, and leads deals across DeFi, DePIN infrastructure,
+          and crypto-consumer applications. He was one of the key architects
+          of the firm’s updated 2026 investment thesis.
+        </p>
+        <p className="mb-4">
+          He studied Accounting and Economics at Miami University. He lives
+          and works in New York City, speaks regularly on podcasts and at
+          industry events, and contributes to various industry groups.
+        </p>
+      </section>
+
+      <div className="mb-2 mt-4 flex gap-4 text-[0.9rem]">
+        <a href="https://x.com/SpencerApplebau" target="_blank" rel="noopener noreferrer">
+          X
+        </a>
+        <a
+          href="https://www.linkedin.com/in/spencer-applebaum-bb6466108/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a href="https://multicoin.capital/" target="_blank" rel="noopener noreferrer">
+          Multicoin
+        </a>
       </div>
+
+      <section>
+        <p
+          className="mb-4 mt-10 text-[0.85rem] font-semibold uppercase tracking-[0.05em]"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          Selected investments
+        </p>
+        <ul>
+          {investments.map((item) => (
+            <li key={item.name} className="mb-6">
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[1.1rem] font-medium no-underline"
+                style={{ fontFamily: "var(--font-newsreader), Newsreader, serif" }}
+              >
+                {item.name}
+              </a>
+              <p className="mt-1 text-[0.9rem]" style={{ color: "var(--text-secondary)" }}>
+                {item.text}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <p className="text-[0.9rem]" style={{ color: "var(--text-secondary)" }}>
+          The firm’s full list of investments is on the{" "}
+          <a
+            href="https://multicoin.capital/portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            portfolio page
+          </a>
+          .
+        </p>
+      </section>
+
+      <section id="writing">
+        <p
+          className="mb-4 mt-10 text-[0.85rem] font-semibold uppercase tracking-[0.05em]"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          Writing
+        </p>
+        <ul>
+          {writing.map((item) => (
+            <li key={item.href} className="mb-6">
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[1.1rem] font-medium no-underline"
+                style={{ fontFamily: "var(--font-newsreader), Newsreader, serif" }}
+              >
+                {item.title}
+              </a>
+              <p className="mt-0.5 text-[0.85rem]" style={{ color: "var(--text-secondary)" }}>
+                {item.date}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="speaking">
+        <p
+          className="mb-4 mt-10 text-[0.85rem] font-semibold uppercase tracking-[0.05em]"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          Speaking
+        </p>
+        <ul>
+          {speaking.map((item) => (
+            <li key={item.title} className="mb-6">
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[1.1rem] font-medium no-underline"
+                style={{ fontFamily: "var(--font-newsreader), Newsreader, serif" }}
+              >
+                {item.title}
+              </a>
+              <p className="mt-0.5 text-[0.85rem]" style={{ color: "var(--text-secondary)" }}>
+                {item.detail}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="contact">
+        <p
+          className="mb-4 mt-10 text-[0.85rem] font-semibold uppercase tracking-[0.05em]"
+          style={{ color: "var(--text-secondary)" }}
+        >
+          Contact
+        </p>
+        <div className="space-y-5">
+          {contacts.map((item) => (
+            <div key={item.email}>
+              <p className="text-[0.85rem]" style={{ color: "var(--text-secondary)" }}>
+                {item.label}
+              </p>
+              <a href={`mailto:${item.email}`}>{item.email}</a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <footer
+        className="mt-16 border-t pt-6 text-[0.85rem]"
+        style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
+      >
+        <p>
+          © 2026 Spencer Applebaum ·{" "}
+          <a
+            href="https://multicoin.capital/terms/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Terms
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://multicoin.capital/disclosures/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Disclosures
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }

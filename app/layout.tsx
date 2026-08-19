@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Newsreader } from "next/font/google";
+import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
 
 const newsreader = Newsreader({
   subsets: ["latin"],
   variable: "--font-newsreader",
-  display: "swap",
-});
-
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist",
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -33,14 +36,20 @@ export const metadata: Metadata = {
   },
 };
 
+const themeInit = `(function(){const t = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+document.documentElement.dataset.theme = t;})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${newsreader.variable} ${geist.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+      </head>
+      <body className={`${inter.variable} ${newsreader.variable} antialiased`}>
         {children}
       </body>
     </html>
