@@ -175,22 +175,22 @@ export default function Home() {
         <section className="mt-14 space-y-5 border-t border-rule pt-10 text-[16.5px] leading-[1.65] text-ink sm:mt-16">
           <p>
             Spencer Applebaum is General Partner and Co-Head of Venture at
-            Multicoin Capital. One of the firm’s first hires, he joined around
+            Multicoin Capital. One of the firm’s first hires, he joined in early
             2018. He was named Investment Partner in March 2023 and promoted to
             General Partner and Co-Head of Venture in March 2026.
           </p>
           <p>
             He works across public and private markets. In public markets he
             drives thesis formation, asset coverage, and on-chain diligence. In
-            private markets he underwrites and negotiates, and leads deals
-            across DeFi, DePIN infrastructure, and crypto-consumer applications.
-            He was one of the key architects of the firm’s updated 2026
-            investment thesis.
+            private markets he drives underwriting and negotiating for the
+            firm’s funds, and leads deals across DeFi, DePIN infrastructure,
+            and crypto-consumer applications. He was one of the key architects
+            of the firm’s updated 2026 investment thesis.
           </p>
           <p>
             He studied Accounting and Economics at Miami University. He lives
-            and works in New York City and contributes to various industry
-            groups.
+            and works in New York City, speaks regularly on podcasts and at
+            industry events, and contributes to various industry groups.
           </p>
         </section>
 
