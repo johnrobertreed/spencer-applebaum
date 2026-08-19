@@ -212,8 +212,18 @@ export default function Home() {
           </ul>
           <p className="mt-8 text-[14.5px] leading-relaxed text-mute">
             He and Shayon Sengupta were instrumental in several of the firm’s
-            investments, including Dune, Fuse, Geodnet, Helium, Kamino,
-            Render, Sei, and Solana.
+            investments, including Dune, Fuse, Geodnet, Helium, Jito, Kamino,
+            Render, Sei, and Solana. The firm’s full list of investments is on
+            the{" "}
+            <a
+              href="https://multicoin.capital/portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-rule underline-offset-[0.18em] hover:text-navy"
+            >
+              portfolio page
+            </a>
+            .
           </p>
         </section>
 
@@ -286,31 +296,51 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="mt-20 flex items-center justify-between border-t border-rule pt-8 text-[13.5px] text-mute">
-          <a
-            href="https://multicoin.capital/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-navy"
-          >
-            Multicoin Capital
-          </a>
-          <div className="flex gap-6">
+        <footer className="mt-20 border-t border-rule pt-8">
+          <div className="flex items-center justify-between text-[13.5px] text-mute">
             <a
-              href="https://x.com/SpencerApplebau"
+              href="https://multicoin.capital/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-navy"
             >
-              X
+              Multicoin Capital
+            </a>
+            <div className="flex gap-6">
+              <a
+                href="https://x.com/SpencerApplebau"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-navy"
+              >
+                X
+              </a>
+              <a
+                href="https://www.linkedin.com/in/spencer-applebaum-bb6466108/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-navy"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <div className="mt-4 flex gap-4 text-[12px] text-mute/70">
+            <a
+              href="https://multicoin.capital/terms/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-mute"
+            >
+              Terms
             </a>
             <a
-              href="https://www.linkedin.com/in/spencer-applebaum-bb6466108/"
+              href="https://multicoin.capital/disclosures/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-navy"
+              className="hover:text-mute"
             >
-              LinkedIn
+              Disclosures
             </a>
           </div>
         </footer>
