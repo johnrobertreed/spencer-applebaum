@@ -7,14 +7,19 @@ const investments = [
     text: "HYPE is a large position in Multicoin’s liquid fund. Applebaum was the primary champion of the investment. He published a public analysis on June 25, 2026.",
   },
   {
+    name: "Solana",
+    href: "https://multicoin.capital/2025/01/22/the-solana-thesis-internet-capital-markets/",
+    text: "Multicoin has been investing in SOL and the Solana ecosystem since the seed round in May 2018. Applebaum was instrumental in the investment.",
+  },
+  {
+    name: "Dune",
+    href: "https://multicoin.capital/2021/08/12/dune-series-a/",
+    text: "On August 12, 2021, Multicoin invested in Dune Analytics’ $8 million Series A, after participating in the seed. Applebaum was instrumental in the investment.",
+  },
+  {
     name: "fun.xyz",
     href: "https://www.gunder.com/en/news-insights/client-news/multicoin-capital-co-leads-funs-dollar72-million-series-a",
     text: "On May 1, 2026, Multicoin co-led a $72 million Series A. As Applebaum noted at the time, Multicoin has led two rounds in fun.xyz.",
-  },
-  {
-    name: "LI.FI",
-    href: "https://www.prnewswire.com/news-releases/lifi-secures-29m-in-series-a-extension-led-by-multicoin-and-coinfund-to-scale-the-universal-liquidity-market-for-digital-assets-302639425.html",
-    text: "On December 11, 2025, Multicoin and CoinFund led a $29 million Series A extension.",
   },
   {
     name: "BAXUS",
@@ -212,7 +217,7 @@ export default function Home() {
           </ul>
           <p className="mt-8 text-[14.5px] leading-relaxed text-mute">
             He was instrumental in several of the firm’s investments, including
-            Dune, Fuse, Geodnet, Helium, Jito, Kamino, Render, Sei, and Solana.
+            Fuse, Geodnet, Helium, Jito, Kamino, Render, and Sei.
             The firm’s full list of investments is on
             the{" "}
             <a
