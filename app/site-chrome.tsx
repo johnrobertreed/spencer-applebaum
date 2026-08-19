@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
@@ -7,26 +8,26 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         className="mb-12 flex items-center justify-between border-b pb-4"
         style={{ borderColor: "var(--border)" }}
       >
-        <a
+        <Link
           href="/"
           className="text-[1.1rem] font-medium leading-none no-underline"
           style={{ fontFamily: "var(--font-newsreader), Newsreader, serif", color: "var(--text)" }}
         >
           Spencer Applebaum
-        </a>
+        </Link>
         <nav
           className="flex flex-wrap items-center justify-end gap-5 text-[0.9rem]"
           style={{ color: "var(--text-secondary)" }}
         >
-          <a href="/#writing" className="no-underline hover:text-[var(--text)]">
+          <Link href="/#writing" className="no-underline hover:text-[var(--text)]">
             Writing
-          </a>
-          <a href="/press" className="no-underline hover:text-[var(--text)]">
+          </Link>
+          <Link href="/press" className="no-underline hover:text-[var(--text)]">
             Press
-          </a>
-          <a href="/#contact" className="no-underline hover:text-[var(--text)]">
+          </Link>
+          <Link href="/#contact" className="no-underline hover:text-[var(--text)]">
             Contact
-          </a>
+          </Link>
           <a
             href="https://multicoin.capital/"
             target="_blank"
