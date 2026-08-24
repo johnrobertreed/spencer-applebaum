@@ -46,23 +46,9 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         className="mt-16 border-t pt-6 text-[0.85rem]"
         style={{ borderColor: "var(--border)", color: "var(--text-secondary)" }}
       >
-        <p>
-          © 2026 Spencer Applebaum ·{" "}
-          <a
-            href="https://multicoin.capital/terms/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Terms
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://multicoin.capital/disclosures/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Disclosures
-          </a>
+        <p>© 2026 Spencer Applebaum</p>
+        <p className="mt-4 text-[0.75rem] leading-relaxed max-w-3xl">
+          The information contained herein is not an offer to buy or sell any security. The views expressed in speaking engagements are my own and don't necessarily reflect those of my employer. Inclusion of the links to such engagements does not represent an endorsement of me by the sponsors. Speaking engagements and writings are a sample of complete works.
         </p>
       </footer>
     </div>
