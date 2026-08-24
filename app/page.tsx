@@ -125,8 +125,8 @@ const writing = [
 
 const contacts = [
   {
-    label: "Investment inquiries",
-    email: "ir@multicoin.capital",
+    label: "Press and speaking",
+    email: "johnrobert@multicoin.capital",
   },
   {
     label: "Startup pitches",
