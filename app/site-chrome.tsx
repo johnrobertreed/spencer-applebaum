@@ -48,7 +48,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
       >
         <p>© 2026 Spencer Applebaum</p>
         <p className="mt-4 text-[0.75rem] leading-relaxed max-w-3xl">
-          The information contained herein is not an offer to buy or sell any security. The views expressed in speaking engagements are my own and don't necessarily reflect those of my employer. Inclusion of the links to such engagements does not represent an endorsement of me by the sponsors. Speaking engagements and writings are a sample of complete works.
+          The information contained herein is not an offer to buy or sell any security. The views expressed in speaking engagements are my own and don&apos;t necessarily reflect those of my employer. Inclusion of the links to such engagements does not represent an endorsement of me by the sponsors. Speaking engagements and writings are a sample of complete works.
         </p>
       </footer>
     </div>
