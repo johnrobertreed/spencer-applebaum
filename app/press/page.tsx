@@ -55,6 +55,21 @@ const speaking = [
     href: "https://www.confbase.com/speakers/spencer-applebaum",
   },
   {
+    title: "Inside One of Crypto's Biggest Funds | Multicoin Capital",
+    detail: "Dealflow, July 23, 2026",
+    href: "https://podcasts.apple.com/us/podcast/dealflow/id1859528286",
+  },
+  {
+    title: "Ep. 741 Multicoin Capital Reveals What Could Start the Next Crypto Bull Market",
+    detail: "Crypto 101, August 6, 2026",
+    href: "https://pocketcasts.com/podcast/crypto-101/2e61ba20-50a9-0135-902b-63f4b61a9224/ep-741-multicoin-capital-reveals-what-could-start-the-next-crypto-bull-market/e561624f-66a2-42e5-822a-dd78fee90c3e",
+  },
+  {
+    title: "The Digital Asset Conference IV",
+    detail: "Oct 19–20, 2026, The Peninsula London, upcoming",
+    href: "https://www.thedigitalassetconference.com/",
+  },
+  {
     title: "TOKEN2049 Dubai",
     detail: "April 21, 2027, upcoming",
     href: "https://www.confbase.com/speakers/spencer-applebaum",
