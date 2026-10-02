@@ -55,6 +55,11 @@ const speaking = [
     href: "https://www.confbase.com/speakers/spencer-applebaum",
   },
   {
+    title: "Backing the Next Financial System",
+    detail: "Gamma Prime Investing Summit Singapore, October 6, 2026, upcoming",
+    href: "https://gammaprime.com/investing-summits/gammaprime-investing-summit-2026-singapore",
+  },
+  {
     title: "TOKEN2049 Dubai",
     detail: "April 21, 2027, upcoming",
     href: "https://www.confbase.com/speakers/spencer-applebaum",
